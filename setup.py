@@ -20,4 +20,4 @@ setup(
   classifiers=classifiers,
   keywords='climate physical risk', 
   packages=find_packages(),
-  install_requires=['pandas','numpy','psycopg2','h2o','scipy','typing','datetime','boto3','osgeo'])
+  install_requires=['pandas','numpy','psycopg2','h2o','scipy','typing','datetime','boto3','gdal'])
