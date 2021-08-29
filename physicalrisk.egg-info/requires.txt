@@ -2,8 +2,8 @@ pandas
 numpy
 psycopg2
 h2o
-osgeo
 scipy
 typing
 datetime
 boto3
+osgeo

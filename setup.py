@@ -10,7 +10,7 @@ classifiers = [
  
 setup(
   name='physicalrisk',
-  version='0.0.8',
+  version='0.1.7',
   description='A climate physical value at risk calculator',
   long_description=open('README.txt').read() + '\n\n' + open('CHANGELOG.txt').read(),
   long_description_content_type='text/markdown',
@@ -20,4 +20,4 @@ setup(
   classifiers=classifiers,
   keywords='climate physical risk', 
   packages=find_packages(),
-  install_requires=['pandas','numpy','psycopg2','h2o','osgeo','scipy','typing','datetime','boto3'])
+  install_requires=['pandas','numpy','psycopg2','h2o','scipy','typing','datetime','boto3','osgeo'])

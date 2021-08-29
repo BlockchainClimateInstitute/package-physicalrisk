@@ -17,7 +17,6 @@ s3 = boto3.resource(
     aws_access_key_id='AKIAYHM23ZQQ4JOTA34C',
     aws_secret_access_key='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'
 )
-
 class Data_Handler():
 
     def __init__(self):
@@ -26,7 +25,7 @@ class Data_Handler():
         self.df_to_predict = pd.DataFrame(columns=self.column_names)
         self.scenarios_based_future_precipitation = {
             1: 'WorldClim/FuturePrecipitation/wc2.1_2.5m_prec_CNRM-CM6-1_ssp126_2021-2040.tif',
-            2: 'WorldClim/FuturePrecipitation/wc2.1_2.5m_prec_CNRM-CM6-1_ssp126_2041-2060.tif'
+            2: 'WorldClim/FuturePrecipitation/wc2.1_2.5m_prec_CNRM-CM6-1_ssp245_2021-2040.tif'
         }
 
     def build_prediction_data(self, input_long_lat: list, scenario):
@@ -73,7 +72,7 @@ class Data_Handler():
 
         future_precipitation_data, _ = self.get_raster_feature(future_precipitation, longitude, latitude,
                                                                RESOLUTION)
-        future_precipitation_data = future_precipitation_data[FUTURE_MONTH]
+        #future_precipitation_data = future_precipitation_data[FUTURE_MONTH]
         future_precipitation_data = future_precipitation_data.reshape(1, -1)
         return future_precipitation_data
 
