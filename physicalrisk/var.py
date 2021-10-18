@@ -28,7 +28,7 @@ class Building:
         self.flood_depth = Construct_Features.flood_depth(self.lon_lat)
         
         h2o.init(log_level="ERRR")
-        h2o_auto_model = h2o.import_mojo(path.dirname(__file__)+"/GBM_grid__1_AutoML_20210810_210013_model_4.zip")
+        h2o_auto_model = h2o.import_mojo("physicalrisk/GBM_grid__1_AutoML_20210810_210013_model_4.zip")
 
         Formatter.green(f'Starting H2O_Auto_ML Prediction')
 
