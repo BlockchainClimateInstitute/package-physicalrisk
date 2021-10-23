@@ -1,0 +1,12 @@
+version: '3.3'
+
+services:
+  package_physicalrisk:
+    build:
+      context: .
+    image: package_physicalrisk_image:latest
+    volumes:
+      - ./notebooks:/notebooks
+    ports:
+      - 8888:8888
+    entrypoint: jupyter lab
