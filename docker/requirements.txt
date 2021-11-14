@@ -1,1 +1,1 @@
-physicalrisk==0.0.3
+physicalrisk==0.2.0
