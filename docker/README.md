@@ -18,3 +18,7 @@ docker-compose up
 ```
 
 Go to: http://localhost:8888/
+
+Specifically to:
+
+- http://localhost:8888/lab/tree/notebooks/TestofPhysicalRisk.ipynb 
